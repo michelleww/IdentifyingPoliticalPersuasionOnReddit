@@ -1,0 +1,6 @@
+1000: 0.3986
+5000: 0.4335
+10000: 0.4467
+15000: 0.4582
+20000: 0.4677
+As we can see, as the training dataset size increases, the testing accuracy also increases in a strictly increasing trend.Normally, We expect the testing accuracy to be increased with the increasing amount of training dataset.We can see from size 1000-5000, the accuracy increases more than others; from 5000-20000, the datasize increases significantly, however, the accuracy only increases around 0.02 in total.This might be related to the capacity of the model since the capacity of the model need to be adjusted to support the increases of training data size.From the result of 3.1, we know that the best estimator is the AdaBoost. We only use the default value for n_estimator which is 50. It might reaches the capacity of the model.In addition, these might realted to the features that we extract from the raw data. If the features are less relevant to the class, we would get low accuracies.
